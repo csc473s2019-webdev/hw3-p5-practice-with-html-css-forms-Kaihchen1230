@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
 </head>
 <body>
@@ -20,15 +21,20 @@
             <label id = "number-label" for="number">Number</label>
             <input id = "number" type="number" min = "10" max = "100" placeholder="Please enter your favorite number between 10 and 100">
             <br>
-            <label for="">Please pick your favorite manga: </label>
-            <select name="dropdown" id="dropdown">
-                <option value="Fairy Tail">Fairy Tail</option>
-                <option value="One Piece">One Piece</option>
-                <option value="Pokemon">Pokemon</option>
-                <option value="Dragon Ball Z">Dragon Ball Z</option>
-                <option value="Bleach">Bleach</option>
-            </select>
+            <div id = "select">
+                <label for="">Please pick your favorite manga: </label>
+                <select name="dropdown" id="dropdown">
+                    <option value="Fairy Tail">Fairy Tail</option>
+                    <option value="One Piece">One Piece</option>
+                    <option value="Pokemon">Pokemon</option>
+                    <option value="Dragon Ball Z">Dragon Ball Z</option>
+                    <option value="Bleach">Bleach</option>
+                </select>
+            </div>
+
             <br>
+
+            <div></div>
             <label for="">Pick your favorite contry: </label>
             <br>
             <input type="radio" name = "country" value="china">
@@ -43,22 +49,25 @@
             <input type="radio" name = "country" value="spain">
             <label for="spain">Spain</label>
             <br>
-            <label for="#">Pick your favorite food, you can choose more than one</label>
-            <br>
-            <input type="checkbox" name = "chinese">
-            <label for="chinese">Chinese Food</label>
-            <br>
-            <input type="checkbox" name = "japanese">
-            <label for="japanese">Japanese Food</label>
-            <br>
-            <input type="checkbox" name = "korean">
-            <label for="korean">Korean Food</label>
-            <br>
-            <input type="checkbox" name = "yemenese">
-            <label for="yemenese">Yemenese Food</label>
-            <br>
-            <input type="checkbox" name = "fast-food">
-            <label for="fast-food">Fast Food</label>
+            <div id = "checkbox">
+                <label class = "space" for="#">Pick your favorite food, you can choose more than one</label>
+                <br>
+                <input type="checkbox" name = "chinese">
+                <label for="chinese">Chinese Food</label>
+                <br>
+                <input type="checkbox" name = "japanese">
+                <label for="japanese">Japanese Food</label>
+                <br>
+                <input type="checkbox" name = "korean">
+                <label for="korean">Korean Food</label>
+                <br>
+                <input type="checkbox" name = "yemenese">
+                <label for="yemenese">Yemenese Food</label>
+            
+                <br>
+                <input type="checkbox" name = "fast-food">
+                <label for="fast-food">Fast Food</label>
+            </div>
             <br>
             <label for="#">If you have any comment, please leave it here</label>
             <br>
