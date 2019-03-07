@@ -12,15 +12,18 @@
         <h1 id = "title">Survey Form</h1>
         <p id = "description">Please enter the information as honest as possible</p>
         <form action="" id = "Survey-form">
-            <label id = "name-label" for ="name">name:</label>
-            <input id = "name" type="text" placeholder="Please enter your name">
+            <div id = "first-part">
+                <label id = "name-label" for ="name">name:</label>
+                <input id = "name" type="text" placeholder="Please enter your name">
+                <br>
+                <label id = "email-label" for="email">Email</label>
+                <input id = "email" type="email" placeholder="Please enter your email">
+                <br>
+                <label id = "number-label" for="number">Number</label>
+                <input id = "number" type="number" min = "10" max = "100" placeholder="Please enter your favorite number between 10 and 100">
+            </div>
             <br>
-            <label id = "email-label" for="email">Email</label>
-            <input id = "email" type="email" placeholder="Please enter your email">
-            <br>
-            <label id = "number-label" for="number">Number</label>
-            <input id = "number" type="number" min = "10" max = "100" placeholder="Please enter your favorite number between 10 and 100">
-            <br>
+
             <div id = "select">
                 <label for="">Please pick your favorite manga: </label>
                 <select name="dropdown" id="dropdown">
@@ -34,20 +37,21 @@
 
             <br>
 
-            <div></div>
-            <label for="">Pick your favorite contry: </label>
-            <br>
-            <input type="radio" name = "country" value="china">
-            <label for="china">China</label>
-            <br>
-            <input type="radio" name = "country" value="USA">
-            <label for="USA">USA</label>
-            <br>
-            <input type="radio" name = "country" value="japan">
-            <label for="japan">Japn</label>
-            <br>
-            <input type="radio" name = "country" value="spain">
-            <label for="spain">Spain</label>
+            <div id = "dropdown">
+                <label for="">Pick your favorite contry: </label>
+                <br>
+                <input type="radio" name = "country" value="china">
+                <label for="china">China</label>
+                <br>
+                <input type="radio" name = "country" value="USA">
+                <label for="USA">USA</label>
+                <br>
+                <input type="radio" name = "country" value="japan">
+                <label for="japan">Japn</label>
+                <br>
+                <input type="radio" name = "country" value="spain">
+                <label for="spain">Spain</label>
+            </div>
             <br>
             <div id = "checkbox">
                 <label class = "space" for="#">Pick your favorite food, you can choose more than one</label>
@@ -69,11 +73,13 @@
                 <label for="fast-food">Fast Food</label>
             </div>
             <br>
-            <label for="#">If you have any comment, please leave it here</label>
-            <br>
-            <textarea rows="4" cols="50"> </textarea>
-            <br>
-            <input id = "submit" type="submit">
+            <div id = "end">
+                <label for="#">If you have any comment, please leave it here</label>
+                <br>
+                <textarea rows="4" cols="50"> </textarea>
+                <br>
+                <input id = "submit" type="submit">
+            </div>
         </form>
     </div>
 </body>
